@@ -1,0 +1,25 @@
+{
+    "name": "storefront-x/magento-module-catalog-graphql-extended",
+    "description": "Magento 2 module - Catalog GraphQL Extension for Magento GraphQL module",
+    "type": "magento2-module",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": ">=7.4",
+        "magento/framework": "^103.0.2",
+	    "magento/module-graph-ql": "^100.4.2"
+    },
+    "license": [
+        "MIT"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "StorefrontX\\CatalogGraphQlExtended\\": ""
+        }
+    }
+}
+
