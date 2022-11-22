@@ -20,4 +20,11 @@ type MSIs {
     enabled : String  @doc(description: "Enabled")
 }
 
+type Cart {
+    child_skus: [ChildSku] @resolver( class: "\\StorefrontX\\CatalogGraphQlExtended\\Model\\Resolver\\ChildSkus") @doc(description: "Configurable sku variant.")
+}
 
+type ChildSku {
+    cart_item_id : Int  @doc(description: "Id in cart")
+    sku : String  @doc(description: "Product SKU")
+}
