@@ -24,7 +24,7 @@ class ChildSkus implements ResolverInterface
     ): array
     {
         $result = [];
-        if (!empty($value['model'])) {
+        if (!empty($value['model']) && ($value['model'] instanceof Quote)) {
             /** @var Quote $cart */
             $cart = $value['model'];
             $items = $cart->getItems();
