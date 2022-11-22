@@ -4,4 +4,4 @@
 
 ### [1.0.1]
 ### Added
-- extention of Cart type in gql schema to return child skus on AddConfigurableProductToCart method
+- extension of Cart type in GQL schema to return child skus on AddConfigurableProductToCart method
