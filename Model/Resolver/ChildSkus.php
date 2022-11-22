@@ -23,15 +23,17 @@ class ChildSkus implements ResolverInterface
         array $args = null
     ): array
     {
-        /** @var Quote $cart */
-        $cart = $value['model'];
-
-        $items = $cart->getItems();
         $result = [];
-        foreach ($items as $item) {
-            $addToResult['cart_item_id'] = $item->getItemId();
-            $addToResult['sku'] = $item->getSku();
-            $result[] = $addToResult;
+        if (!empty($value['model'])) {
+            /** @var Quote $cart */
+            $cart = $value['model'];
+            $items = $cart->getItems();
+
+            foreach ($items as $item) {
+                $addToResult['cart_item_id'] = $item->getItemId();
+                $addToResult['sku'] = $item->getSku();
+                $result[] = $addToResult;
+            }
         }
         return $result;
     }
