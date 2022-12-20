@@ -28,3 +28,7 @@ type ChildSku {
     cart_item_id : Int  @doc(description: "Id in cart")
     sku : String  @doc(description: "Product SKU")
 }
+
+input ProductAttributeFilterInput {
+    id: FilterEqualTypeInput @doc(description: "Filter product by the unique ID.")
+}
