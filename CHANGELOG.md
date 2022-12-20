@@ -5,3 +5,7 @@
 ### [1.0.1]
 ### Added
 - extension of Cart type in GQL schema to return child skus on AddConfigurableProductToCart method
+
+### [1.0.2] - 2022-12-20
+### Added
+- select product attribute by product ID
