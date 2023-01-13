@@ -9,3 +9,7 @@
 ### [1.0.2] - 2022-12-20
 ### Added
 - select product attribute by product ID
+
+### [1.0.3] - 2022-12-20
+### Added
+- Enable product fragment to graphql

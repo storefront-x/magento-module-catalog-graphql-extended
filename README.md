@@ -6,6 +6,8 @@ Module for Magento 2
 to generate catalog and product information endpoints.
 This module provides the all products attribute selected by product ID.
 
+Enable inline product fragment
+
 ## License
 
 The module is licensed under the MIT license.
