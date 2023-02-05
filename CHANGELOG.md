@@ -13,3 +13,7 @@
 ### [1.0.3] - 2022-12-20
 ### Added
 - Enable product fragment to graphql
+
+### [1.0.4] - 2023-02-05
+### Added
+- Change image url to absolute in dynamic block

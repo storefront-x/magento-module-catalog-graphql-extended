@@ -8,6 +8,8 @@ This module provides the all products attribute selected by product ID.
 
 Enable inline product fragment
 
+Change image url to absolute in dynamic block
+
 ## License
 
 The module is licensed under the MIT license.
