@@ -35,8 +35,10 @@ class DynamicBlockFormatterPlugin
         array $result,
         Banner $dynamicBlock
     ) {
-        $absoluteUrl = $this->storeManager->getStore()->getBaseUrl()."media/";
-        $dynamicBannerContent = preg_replace("/media url=/",$absoluteUrl,$dynamicBlock->getBannerContent());
+        $absoluteUrl = "src=\"".$this->storeManager->getStore()->getBaseUrl()."media/";
+
+        $dynamicBannerContent = preg_replace("/(}}\" alt)/","\" alt",$dynamicBlock->getBannerContent());
+        $dynamicBannerContent = preg_replace("/src=\"{{media url=/",$absoluteUrl,$dynamicBannerContent);
 
         $result['content']['html'] = $dynamicBannerContent;
 
