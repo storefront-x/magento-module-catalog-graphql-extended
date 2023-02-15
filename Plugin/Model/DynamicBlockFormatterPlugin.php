@@ -39,8 +39,8 @@ class DynamicBlockFormatterPlugin
 
         $dynamicBannerContent = preg_replace("/(}}\" alt)/","\" alt",$dynamicBlock->getBannerContent());
         $dynamicBannerContent = preg_replace("/src=\"{{media url=/","src=\"".$absoluteUrl,$dynamicBannerContent);
-        $dynamicBannerContent = preg_replace("/}}\\\&quot;}/","\"}",$dynamicBannerContent);
-        $dynamicBannerContent = preg_replace("/images=\"{\\\&quot;desktop_image\\\&quot;:\\\&quot;{{media url=/","images=\"{\"desktop_image\":\"".$absoluteUrl,$dynamicBannerContent);
+        $dynamicBannerContent = preg_replace("/}}\\\&quot;}\"/","\\&quot;}\"",$dynamicBannerContent);
+        $dynamicBannerContent = preg_replace("/images=\"{\\\&quot;desktop_image\\\&quot;:\\\&quot;{{media url=/","images=\"{\\&quot;desktop_image\\&quot;:\\&quot;".$absoluteUrl,$dynamicBannerContent);
 
         $result['content']['html'] = $dynamicBannerContent;
 
