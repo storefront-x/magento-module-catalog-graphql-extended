@@ -1,5 +1,5 @@
 interface ProductInterface {
-    msi_info: [MSIs] @resolver( class: "StorefrontX\\CatalogGraphQlExtended\\Model\\Resolver\\MSI") @doc(description: "Get MSI data for products sku.")
+    msi_info: [MSIs] @resolver( class: "StorefrontX\\CatalogGraphQlExtended\\Model\\Resolver\\MSI") @doc(description: "Get MSI data for products sku.") @cache(cacheIdentity: "StorefrontX\\CatalogGraphQlExtended\\Model\\Resolver\\MSI\\Identity")
 }
 
 type Query {
