@@ -17,3 +17,8 @@
 ### [1.0.4] - 2023-02-05
 ### Added
 - Change image url to absolute in dynamic block
+
+### [1.0.9] - 2023-03-06
+### Added
+- Cache identity to schema graqhqls
+- Change image url to media URL in dynamic block
