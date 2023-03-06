@@ -35,7 +35,7 @@ class DynamicBlockFormatterPlugin
         array $result,
         Banner $dynamicBlock
     ) {
-        $absoluteUrl = $this->storeManager->getStore()->getBaseUrl()."media/";
+        $absoluteUrl = $this->storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);
 
         $dynamicBannerContent = preg_replace("/(}}\" alt)/","\" alt",$dynamicBlock->getBannerContent());
         $dynamicBannerContent = preg_replace("/src=\"{{media url=/","src=\"".$absoluteUrl,$dynamicBannerContent);
