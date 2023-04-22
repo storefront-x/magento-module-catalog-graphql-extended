@@ -1,25 +1,3 @@
-interface ProductInterface {
-    msi_info: [MSIs] @resolver( class: "StorefrontX\\CatalogGraphQlExtended\\Model\\Resolver\\MSI") @doc(description: "Get MSI data for products sku.") @cache(cacheIdentity: "StorefrontX\\CatalogGraphQlExtended\\Model\\Resolver\\MSI\\Identity")
-}
-
-type Query {
-    msi_info(sku: String @doc(description: "Product SKU")) : [MSIs] @resolver( class: "StorefrontX\\CatalogGraphQlExtended\\Model\\Resolver\\MSI") @doc(description: "Get MSI data for products sku.")
-}
-
-type MSIs {
-    source_code : String  @doc(description: "Source Code")
-    quantity : String  @doc(description: "Product Quantity")
-    sku : String  @doc(description: "Product SKU")
-    status : String  @doc(description: "Status")
-    name : String  @doc(description: "Source Name")
-    latitude : String  @doc(description: "Latitude")
-    longitude : String  @doc(description: "Longitude")
-    country_id : String  @doc(description: "Country Id")
-    street : String  @doc(description: "street")
-    postcode : String  @doc(description: "Postcode")
-    enabled : String  @doc(description: "Enabled")
-}
-
 type Cart {
     child_skus: [ChildSku] @resolver( class: "\\StorefrontX\\CatalogGraphQlExtended\\Model\\Resolver\\ChildSkus") @doc(description: "Configurable sku variant.")
 }
