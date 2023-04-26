@@ -28,7 +28,5 @@
         <filters>
             <filter xsi:type="termFilter" name="entity_id" field="_id" value="$id$"/>
         </filters>
-        <aggregations>
-        </aggregations>
     </request>
 </requests>
