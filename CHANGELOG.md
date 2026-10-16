@@ -23,7 +23,7 @@
 - Cache identity to schema graqhqls
 - Change image url to media URL in dynamic block
 
-## [Unreleased]
+## [1.1.0] - 2026-10-16
 ### Fixed
 - PHP 8.4/8.5 compatibility: explicit nullable types for parameters with a null default (implicitly nullable parameters are deprecated since PHP 8.4).
 
