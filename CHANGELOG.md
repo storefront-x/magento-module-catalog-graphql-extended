@@ -26,3 +26,7 @@
 ## [Unreleased]
 ### Fixed
 - PHP 8.4/8.5 compatibility: explicit nullable types for parameters with a null default (implicitly nullable parameters are deprecated since PHP 8.4).
+
+## [Unreleased]
+### Fixed
+- search_request.xml: removed the empty <aggregations> element, which fails XSD validation in developer mode ("Expected is ( bucket )").
