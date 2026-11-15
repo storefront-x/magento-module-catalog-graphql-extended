@@ -41,7 +41,7 @@ class MSI implements ResolverInterface
             $sku = $args['sku'];
         } elseif (!isset($value['sku'])) {
             $this->logger->error('Error - no sku', ['error' => $value]);
-            $sku = null;
+            return [];
         } else {
             $sku = $value['sku'];
         }
