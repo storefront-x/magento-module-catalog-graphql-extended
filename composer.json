@@ -3,7 +3,11 @@
     "description": "Magento 2 module - Catalog GraphQL Extension for Magento GraphQL module",
     "type": "magento2-module",
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
+        }
     },
     "require": {
         "php": ">=7.4",
@@ -22,6 +26,11 @@
         "psr-4": {
             "StorefrontX\\CatalogGraphQlExtended\\": ""
         }
+    },
+    "require-dev": {
+        "bitexpert/phpstan-magento": "^0.44",
+        "magento/magento-coding-standard": "^41",
+        "phpstan/extension-installer": "^1.4",
+        "phpstan/phpstan": "^2.1"
     }
 }
-
